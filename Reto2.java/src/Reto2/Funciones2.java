@@ -5,10 +5,15 @@ import java.util.Scanner;
 import util.Funciones;
 
 public class Funciones2 {
-	
 	public static Double celsiusAfahrenhit(Double celsius) {
 		return celsius*1.8+32;
 	}
+	public static Double fahrenhitAcelsius(Double fahrenheit) {
+		return fahrenheit*1.8+32;
+	}
+
+
+	
 	
 	
 	
