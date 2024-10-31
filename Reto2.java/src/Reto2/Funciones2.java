@@ -40,6 +40,9 @@ public class Funciones2 {
 	public static Double litroAgalon(Double litro) {
 		return litro*3.785;
 	}
+	public static Double galonAlitro(Double galon) {
+		return galon*3.785;
+	}
 	
 	
 	
