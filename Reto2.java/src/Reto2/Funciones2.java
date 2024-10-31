@@ -11,15 +11,15 @@ public class Funciones2 {
 	public static Double fahrenhitAcelsius(Double fahrenheit) {
 		return fahrenheit*1.8+32;
 	}
-	public static double temperatura(Double num,Scanner sc) {
+	public static double temperatura(Scanner sc) {
 		//Elige opcion
 
-			System.out.println("Selecciona la conversion de temperatura"
-						+ "1. Celsius a Fahrenheint"
-						+ "2. Fahrenheint a Celsius"
-						+ "0. Salir");
-			Funciones.dimeEntero("Dime la opcion", sc);
-			int opcion=sc.nextInt();
+			System.out.println("Selecciona la conversion de temperatura:");
+			System.out.println("1. Celsius a Fahrenheint");
+			System.out.println("2. Fahrenheint a Celsius");
+			System.out.println("0. Salir");
+			int opcion=Funciones.dimeEntero("Dime la opcion", sc);
+			
 			
 			switch (opcion) {
 			case 0:
@@ -35,6 +35,7 @@ public class Funciones2 {
 		
 		
 		return 0.0;
+	
 	}
 
 	
