@@ -12,8 +12,6 @@ public class Funciones2 {
 		return fahrenheit*1.8+32;
 	}
 	public static double temperatura(Double num,Scanner sc) {
-
-		
 		//Elige opcion
 
 			System.out.println("Selecciona la conversion de temperatura"
@@ -22,16 +20,17 @@ public class Funciones2 {
 						+ "0. Salir");
 			Funciones.dimeEntero("Dime la opcion", sc);
 			int opcion=sc.nextInt();
+			
 			switch (opcion) {
 			case 0:
 				break;
 
 			case 1:
-				
-				break;
+				double opcionCase1=Funciones.dimeDouble("Escribe temperatura", sc);
+				return celsiusAfahrenhit(opcionCase1);
 			case 2:
-				Funciones.dimeDouble("Escribe temperatura", sc);
-				break;
+				double opcionCase2=Funciones.dimeDouble("Escribe temperatura", sc);
+				return fahrenhitAcelsius(opcionCase2);
 			}
 		
 		
