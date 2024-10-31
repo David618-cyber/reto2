@@ -43,6 +43,33 @@ public class Funciones2 {
 	public static Double galonAlitro(Double galon) {
 		return galon*3.785;
 	}
+	public static double volumen(Scanner sc) {
+		//Elige opcion
+
+			System.out.println("Selecciona la conversion de volumen:");
+			System.out.println("1. Litros a Galon");
+			System.out.println("2. Galon a Litros");
+			System.out.println("0. Salir");
+			int opcion=Funciones.dimeEntero("Dime la opcion", sc);
+			
+			
+			switch (opcion) {
+			case 0:
+				break;
+
+			case 1:
+				double opcionCase1=Funciones.dimeDouble("Escribe temperatura", sc);
+				return litroAgalon(opcionCase1);
+			case 2:
+				double opcionCase2=Funciones.dimeDouble("Escribe temperatura", sc);
+				return galonAlitro(opcionCase2);
+			}
+		
+		
+		return 0.0;
+	
+	}
+	
 	
 	
 	
